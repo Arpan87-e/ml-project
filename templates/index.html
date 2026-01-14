@@ -3,25 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Math Score Prediction</title>
+
+    <style>
+        body {
+            background-image: url("/static/images/new.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 18px;   /* larger paragraph text */
+            line-height: 1.6;
+        }
+
+        a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0d6efd;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        a.btn:hover {
+            background-color: #084298;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
+
     <header>
-    <h1>Welcome to math score prediction</h1>
+        <h1>Welcome to Math Score Prediction</h1>
     </header>
+
     <main>
         <article>
-            <b>
-            This is the machine learning project for predicting maths score of students based on different features like:gender,race or ethnicity,writting score etc.. 
-            </b>
+            <p>
+                This is a machine learning project for predicting students' math scores
+                based on various features such as gender, race or ethnicity,
+                writing score, and more.
+            </p>
         </article>
-    </main>
-    <br>
-    <a href="/predictdata"> <div class="mb-3">
-            <input class="btn btn-primary" type="submit" value="click here for prediction" required />
-        </div>
-    </a>
 
-    
+        <div class="text-center">
+            <a href="/predictdata" class="btn">
+                Click here for prediction
+            </a>
+        </div>
+    </main>
+
 </body>
 </html>
